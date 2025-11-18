@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio</title>
+    
+    <!-- 
+        ===================================================================
+        C S S   S T Y L E S 
+        (All styling is contained here)
+        =================================================================== 
+    -->
+    <style>
+        /* --- 1. Global Setup --- */
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color:pink  ; /* Light gray background */
+            color: #333333; /* Dark text for high contrast */
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Center and limit the width of all content */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 0; 
+        }
+
+        /* --- 2. Header and Navigation --- */
+        header {
+            background-color:rgb(17, 17, 96); /* Dark Navy Blue */
+            color:rgb(199, 112, 213);
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        header .container {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.6em;
+        }
+
+        nav a {
+            color: rgb(194, 92, 210);
+            text-decoration: none;
+            margin-left: 25px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color:white ; /* Accent Blue hover color */
+        }
+
+        /* --- 3. Section Styling --- */
+        section {
+            padding: 40px 0;
+            margin: 20px 0;
+            background-color: pink ;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color:rgb(137, 24, 152) ; /* Accent Blue for main titles */
+            font-size: 2em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid pink ;
+            margin-bottom: 30px;
+        }
+
+        /* --- 4. Project Cards --- */
+        #projects .project-card {
+            background-color: pink ;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid pink ; /* Dark border on the left */
+            border-radius: 4px;
+        }
+
+        .project-card h3 {
+            color: rgb(173, 59, 180) ;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color:blue(12, 23, 93);
+            color: pink ;
+            padding: 4px 8px;
+            font-size: 0.8em;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+
+        .project-link {
+            color: white ;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* --- 5. Skills List --- */
+        .skills-list {
+            list-style-type: none; 
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+
+        .skills-list li {
+            background-color: pink ; /* Light gray background for skills */
+            color: #1a2a3a;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid pink ;
+            font-weight: 600;
+        }
+
+        /* --- 6. Footer --- */
+        footer {
+            background-color:pink ; 
+            color: rgb(203, 48, 180);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        /* --- 7. Basic Responsiveness --- */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column; 
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 5px 10px;
+                display: inline-block;
+            }
+
+            .container {
+                width: 95%; 
+            }
+
+            .skills-list {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header and Navigation -->
+    <header>
+        <div class="container">
+            <h1>eyerusalem bekele </h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content Area -->
+    <main>
+        
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a student currently learning the foundations of web design and coding. I am committed to improving my skills in structuring content with HTML and styling pages with CSS. This portfolio is a demonstration of my current abilities and my dedication to learning new technologies.
+
+               currently I am particularly interested in website development </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2>project</h2>
+            
+            <div class="project-card">
+            
+                <h4>
+                 i developed a modern responsive design for afro beauty shop using html and css.
+                 i implimented a seamless online booking system to replace phone schduling,
+                 which increase in online appointments and significantly reduced the salon's 
+                 administrative workload.
+    
+                </h4>
+            
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container">
+            <h2>Key Skills</h2>
+            <h4>
+                currently i am a developing web developer with a strong focus on mastering responsive 
+                front-end design using html and css i have cmpleted small project for (afro beauty salon)
+                and i am actively expanding my knowladge into javascript.
+            </h4>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <h4>
+                Please feel free to connect with me regarding any assignments or learning opportunities.
+            </h4>
+            <address>
+                Email: <a href="eyu834@gmail.com">eyu834@gmail.com</a><br>
+                
+            </address>
+        </section>
+        
+    </main>
+
+    <!-- 3. Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 eyerusalem bekele.All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
